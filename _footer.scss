@@ -1,0 +1,8 @@
+.footer {
+    margin-bottom: 20px;
+    color: grey;
+
+    & > a {
+        color: white;
+    }
+}

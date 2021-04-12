@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 200px;
+
+    &__logo {
+        font-weight: bold;
+    }
+
+    &__link {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        display: inline-block;
+        text-decoration: none;
+        color: grey;
+        padding: 10px;
+
+        &:hover {
+            border-bottom: 5px solid grey;
+        }
+    }
+
+    & .link--active {
+        color: white;
+        border-bottom: 5px solid white;
+
+        &:hover {
+            border-bottom: 5px solid grey;
+        }
+    }
+}

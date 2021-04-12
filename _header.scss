@@ -1,3 +1,13 @@
+@mixin link {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -10,13 +20,7 @@
     }
 
     &__link {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: bold;
-        font-size: 14px;
-        display: inline-block;
-        text-decoration: none;
-        color: grey;
-        padding: 10px;
+        @include link;
 
         &:hover {
             border-bottom: 5px solid grey;
